@@ -1,0 +1,274 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    color: #515151;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 15px;
+
+}
+
+header {
+    background: #1c3643;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header img {
+    margin-left: 10px;
+}
+
+.menu {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    margin-right: 6px;
+}
+.menu-header {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.menu-header .button {
+    margin-left: 10px;
+}
+.menu-header ul {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.menu-header li {
+    height: inherit;
+    list-style: none; 
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+.menu-elements::after {
+    content: '|';
+    font-size: 20px;
+    margin: 0 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.menu-elements:last-child::after {
+    display: none;
+}
+
+.menu-header a {
+    height: inherit;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    font-weight: 700;
+}
+.menu-elements a:hover {
+    box-shadow: inset 0 5px 0 #FF4842 !important; 
+}
+.menu-elements a.is-active {
+    box-shadow: inset 0 5px 0 #7dcd40;
+}
+
+/* boton Iniciar sesión */
+.button {
+    background: #ff4842;
+    box-shadow: inset 0 -5px 0 rgba(0, 0, 0, .3);
+    border-radius: 3.5px;
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+    font-size: 18px;
+    padding: 0 10px 15px 10px;
+     text-decoration: none;
+}
+.button:hover {
+    background: #7dcd40;
+}
+.button:active {
+    transform: scale(.8);
+}
+
+/* portada del blog */
+.contenido {
+    /* border: 4px solid orangered; */
+    height: 1024px;
+    
+}
+.portada {
+    background: #F3F3F6;
+    /* border:2px solid red; */
+    height: 500px;
+}
+.contenedor-portada {
+    /* background: rgb(161, 161, 245);
+    border: 2px solid red; */
+    height: inherit;
+    margin: auto;
+    width: 1024px;
+}
+.contenedor-search {
+    /* background: rgb(161, 161, 245);
+    border: 2px solid rgb(2, 2, 2); */
+    margin: 0 0 0 557px;
+}
+.div-search {
+    display: flex;
+    align-items: center;
+    padding-top: 6px;
+}
+.search {
+    display: flex;
+    align-items: center;
+    width: 900px;
+}
+.search-input {
+    background: #fff;
+    border-radius: 5px 0 0 5px!important;
+    border-right: 0!important;
+    margin: 0!important;
+    display:block;
+    outline:0;
+    width:100%;
+    padding: 8px;
+    font-size:16px;
+    box-sizing:border-box;
+    color:#1c3643;
+    border: 1px solid #dbdbe2;
+    transition: border-color .2s;
+}
+.search-input:focus {
+    border-color: #0a8ecd;
+}
+.search-icon {
+    background:#0a8ecd;
+    width:50px;
+    height: 36px;
+    display: flex;
+    -webkit-box-align:center;
+    -o-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+    border-radius:0 5px 5px 0;
+    -webkit-box-pack:center;
+    -o-box-pack:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+    font-size:22px;
+    border:none;
+    position:relative;
+    color:#fff;
+}
+.icon-search:before{
+    font-family:"icomoon";
+    font-style: normal;
+    font-variant:normal;
+    speak: none;
+    text-transform: none;
+    content: "\E650";
+}
+.search-icon input{
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    border:none;
+    opacity:0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-filter:alpha(opacity=0);
+    -moz-filter:alpha(opacity=0);
+    -ms-filter:alpha(opacity=0);
+    -o-filter:alpha(opacity=0);
+    filter:alpha(opacity=0);
+    cursor:pointer;
+}
+.img-portada {
+    background: url(https://static.platzi.com/media/blog/cover_bitcoinbitcoin-b517a29d-9c15-4036-9fb5-03baa53257eb.jpg);
+    height: 90%;
+    margin-top: 8px;
+}
+.titulo {
+    background: rgba(245,246,247,.8);
+    /* display: block; */
+    float: left;
+    margin-top: 200px;
+    margin-left: 20px;
+    align-items: center;
+    padding: 10px 20px;
+    width: 425px;
+    
+}
+.autor {
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    padding-top: 15px;
+}
+.autor img {
+    border-radius: 50px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.autor p {
+    margin: 0;
+}
+.articulos {
+    width: 1024px;
+    margin: auto;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contenedor-articulos {
+    width: 320px;
+    margin-bottom: 16px;
+}
+.paginador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+.paginador ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+}
+.paginador li {
+    background: #eaeaea;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid gray;
+    margin: 0 5px;
+}
+.paginador li.selected {
+    background: white;
+    border: transparent;
+}
+.paginador a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: #666666;
+    font-weight: 600;
+    display: block;
+    height: inherit;
+
+}
